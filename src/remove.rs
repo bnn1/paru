@@ -90,7 +90,7 @@ pub fn remove(config: &mut Config) -> Result<i32> {
 
             let filtered: Vec<String> = removal_list
                 .into_iter()
-                .filter(|p| !kept.contains(p.as_str()))
+                .filter(|p| !kept.contains(p))
                 .collect();
 
             modified_args = {
