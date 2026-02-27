@@ -160,6 +160,11 @@ By default Paru will continue and try to build other AUR packages.
 Keep src/ and pkg/ directories after building packages.
 
 .TP
+.B KeepOptdeps
+When removing packages with \-Rs, keep dependencies that are optional
+dependencies of other installed packages instead of removing them.
+
+.TP
 .B Redownload [= all]
 Always download PKGBUILDs of targets even when a copy is available in cache. If
 set to all then this applies to all packages, not only targets.

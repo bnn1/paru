@@ -82,6 +82,7 @@ pub fn help() {
     printtr!("    --[no]chroot           Build packages in a chroot");
     printtr!("    --[no]failfast         Exit as soon as building an AUR package fails");
     printtr!("    --[no]keepsrc          Keep src/ and pkg/ dirs after building packages");
+    printtr!("    --[no]keepoptdeps      Keep optional dependencies when removing with -Rs");
     printtr!("    --[no]sign             Sign packages with gpg");
     printtr!("    --[no]signdb           Sign databases with gpg");
     printtr!("    --[no]localrepo        Build packages into a local repo");

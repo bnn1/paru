@@ -466,6 +466,7 @@ pub struct Config {
     pub keep_repo_cache: bool,
     pub fail_fast: bool,
     pub keep_src: bool,
+    pub keep_optdeps: bool,
 
     pub sign: Sign,
     pub sign_db: Sign,
@@ -1082,6 +1083,7 @@ then initialise it with:
             "KeepRepoCache" => self.keep_repo_cache = true,
             "FailFast" => self.fail_fast = true,
             "KeepSrc" => self.keep_src = true,
+            "KeepOptdeps" => self.keep_optdeps = true,
             "SignDb" => {
                 self.sign_db = match value {
                     Some(v) => Sign::Key(v.to_string()),
