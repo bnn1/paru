@@ -308,6 +308,8 @@ impl Config {
             Arg::Long("nofailfast") => self.fail_fast = false,
             Arg::Long("keepsrc") => self.keep_src = true,
             Arg::Long("nokeepsrc") => self.keep_src = false,
+            Arg::Long("keepoptdeps") => self.keep_optdeps = true,
+            Arg::Long("nokeepoptdeps") => self.keep_optdeps = false,
             // ops
             Arg::Long("database") | Arg::Short('D') => set_op(Op::Database),
             Arg::Long("files") | Arg::Short('F') => set_op(Op::Files),

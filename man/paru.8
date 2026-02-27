@@ -637,6 +637,15 @@ Keep src/ and pkg/ directories after building packages.
 Don't keep src/ and pkg/ directories after building packages.
 
 .TP
+.B \-\-keepoptdeps
+When removing packages with \-Rs, keep dependencies that are optional
+dependencies of other installed packages instead of removing them.
+
+.TP
+.B \-\-nokeepoptdeps
+Don't keep optional dependencies when removing with \-Rs.
+
+.TP
 .B \-\-combinedupgrade
 During sysupgrade, paru will first perform a refresh, then show
 its combined menu of repo and AUR packages that will be upgraded. Then after
